@@ -1,9 +1,6 @@
+"use strict";
 // import { PrismaClient,Prisma } from "@prisma/client";
-
 // const prisma = new PrismaClient();
-
-
-
 // export async function main(id: number, name: string) {
 //     try {
 //         const data:Array<Prisma.UserCreateManyInput> = [
@@ -26,7 +23,3 @@
 //         }
 //     }
 // }
-
-
-
-
