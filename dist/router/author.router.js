@@ -46,3 +46,10 @@ exports.authorRouter.get('/', (req, res) => __awaiter(void 0, void 0, void 0, fu
     }
     catch (error) { }
 }));
+exports.authorRouter.post('/create/firstName/:firstName/lastName/:lastName', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const author = yield authorService.createAuthors(req.params.firstName, req.params.lastName);
+        return res.status(200).json(author);
+    }
+    catch (error) { }
+}));
